@@ -9,7 +9,17 @@
 // If a number is NOT divisible by 3 and 5, do not include it to the array.
 
 function fizzBuzz(start, end) {
-
+    let newArr = []
+    for(let i = start; i <= end; i++) {
+        if(i % 3 === 0 && i % 5 === 0) {
+            newArr.push("FizzBuzz")
+        } else if(i % 5 === 0){
+            newArr.push("Buzz")
+        } else if (i % 3 === 0){
+            newArr.push("Fizz")
+        }
+    }
+    return newArr;
 }
 
 module.exports = fizzBuzz;
