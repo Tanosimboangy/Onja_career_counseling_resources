@@ -21,4 +21,12 @@ function letterCount(str) {
 return count;
 }
 
+function letterCount(str) {
+  let count = {}
+  str.toLowerCase().split().join('').split().forEach(item => {
+          count[char] ? count[char]++ : count[char] = 1
+   })
+ return count;
+ }
+
 module.exports = letterCount;
