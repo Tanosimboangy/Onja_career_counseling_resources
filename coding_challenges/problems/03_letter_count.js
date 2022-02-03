@@ -21,6 +21,8 @@ function letterCount(str) {
 return count;
 }
 
+Or
+
 function letterCount(str) {
   let count = {}
   str.toLowerCase().split().join('').split().forEach(item => {
